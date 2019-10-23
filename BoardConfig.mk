@@ -202,6 +202,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
@@ -218,7 +221,7 @@ TARGET_RIL_VARIANT := caf
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-10-05
+VENDOR_SECURITY_PATCH := 2019-10-01
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
