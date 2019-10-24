@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_lavender.mk
+    $(LOCAL_DIR)/cosp_lavender.mk
