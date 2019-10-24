@@ -14,11 +14,10 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common BootLeggers stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-BOOTLEGGERS_BUILD_TYPE := Shishufied
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/cosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bootleg_lavender
+PRODUCT_NAME := cosp_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
